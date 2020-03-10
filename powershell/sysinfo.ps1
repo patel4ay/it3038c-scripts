@@ -1,0 +1,1 @@
+Get-Content C:\txt.txt | Where-Object {$_.Contains('Donkey')}
