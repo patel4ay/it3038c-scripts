@@ -10,7 +10,7 @@ The Get-ProgramInstallInfo function determine what programs are installed for al
     Get-CPrograminstallinfo -name 'Microsoft'
     Get-CPrograminstallinfo -name 'Mozilla Firefox 74.0 (x86 en-US)' | select-object *
 
-In powershell we use ipconfig but Carbon module returns all the IP addresses in use on local computer.
+In powershell we use ipconfig to get the IP address but, in carbon module returns all the IP addresses in use on local computer.
 
     Get-IPAddress
     Get-IPAddress -V4
@@ -19,5 +19,9 @@ In powershell we use ipconfig but Carbon module returns all the IP addresses in 
 The Install-Directory function creates a directory. If directory already exits, it does nothing. If directories don't exist, they are created.
 
     Install-Directory -Path 'C:\it3038c\Projects'
+
+The Uninstall-Directory function deletes a directory if it exists.
+
+    Unistall-Directory -Path 'C:\it3038c\Projects'
     
 Carbon module have various functions. These are some of the uses that are helpful in everyday.            
