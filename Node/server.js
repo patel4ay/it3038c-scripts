@@ -25,6 +25,8 @@ var server = http.createServer(function(req, res){
 
     else if(req.url.match("/sysinfo")){
         myHostName=os.hostname();
+        hmdir=os.tmpdir();
+        const cpum = () => [os.cpus()[0].model];
         html=`
         <!DOCTYPE html>
         <html>
@@ -38,6 +40,13 @@ var server = http.createServer(function(req, res){
          <p>Total Memory: ${os.totalmem/1000000} MB </p>
          <p>Free Memory: ${os.freemem/1000000} MB </p>
          <p>Number of CPUs: ${os.cpus().length} </p>
+         <p>Model: ${cpum()}</p>
+         <p>OS Platform: ${os.platform()}</p>
+         <p>OS Type: ${os.type}</p>
+         <p>OS Release: ${os.release}</p>
+         <p>OS Architecture: ${os.arch}</p>
+         <p>Directory: ${os.homedir}</p>
+         <p>Temporary Directory: ${hmdir}</p>
          </body>
          </html>
         `
