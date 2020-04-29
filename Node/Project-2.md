@@ -4,6 +4,7 @@ To run this file you have to open it in VS Code. Make sure that you have the ./p
 Then go to a web browser and search for loaclhost:3000/ or localhost:3000/sysinfo
 
 The result will look this:
+
 Hostname: DESKTOP-8NPR05E
 
 IP: 192.168.33.152
