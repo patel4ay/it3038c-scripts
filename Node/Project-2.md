@@ -3,7 +3,7 @@ For my Project-2 I expanded on server.js file by adding OS information, model in
 To run this file you have to open it in VS Code. Make sure that you have the ./public/index.html file open in the same folder. Run node in your terminal and then run the file by typing node server.js
 Then go to a web browser and search for loaclhost:3000/ or localhost:3000/sysinfo
 
-The result will look this:
+The result will look like this:
 
 Hostname: DESKTOP-8NPR05E
 
